@@ -82,11 +82,7 @@ func beginsWithVowel(_ value: String) -> Bool {
  **Hint**: Re-use the `beginsWithVowel` function.
  */
 func funWithWords(_ string: String) -> String {
-    if beginsWithVowel(string) {
-        return string.uppercased()
-    } else {
-        return string.lowercased()
-    }
+    return beginsWithVowel(string) ? string.uppercased() : string.lowercased()
 }
 
 /* Example Function Call */
